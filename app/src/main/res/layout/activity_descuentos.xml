@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Descuentos al Salario"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Nombre del empleado -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del empleado"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Salario base -->
+    <EditText
+        android:id="@+id/etSalarioBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salario base"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón calcular -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Descuentos"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Resultados -->
+    <TextView
+        android:id="@+id/tvResultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultados:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvRenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Renta: $0.00"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvAFP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AFP (7.25%): $0.00"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvISSS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISSS (3%): $0.00"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvSalarioNeto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salario Neto: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
